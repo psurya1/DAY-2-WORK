@@ -15,4 +15,4 @@ sub.o :sub.c
 	$(cc) -c -o sub.o sub.c
 
 clean:
-	rm -rf *. output1
+	rm -rf *.o output1
