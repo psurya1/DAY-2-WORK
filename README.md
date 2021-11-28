@@ -12,3 +12,13 @@ DEMO PURPOSE
 -main.c
 -main.o
 
+# DAY-4-WORK
+
+## creating library files
+    -.a   
+    -.os
+## create fork file
+    -pid
+    -ppid
+## create typedef file
+---
