@@ -12,7 +12,8 @@
 int main(int argc,char const *argv[])
 {
     int fd[2];
-    char buff[15];
+    char buff[14];
+    
     
     fd[0]=open(argv[1], O_RDONLY);
     fd[1]=open(argv[2], O_WRONLY);
@@ -23,7 +24,8 @@ int main(int argc,char const *argv[])
         exit(EXIT_FAILURE);
     }
     else
-    {
+    {   
+        
         read(fd[0],buff,sizeof(buff));
         write(fd[1],buff,sizeof(buff));
         
