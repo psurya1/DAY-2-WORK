@@ -18,6 +18,11 @@
 # DAY-5-WORK
 ## **library files**
 - libavg.o and libavg.so received from friend and run in our system.
+
+## **system call**
+- create system call demo files
+## **assignment of day-5**
+- copy datas from source file and put it in destination file through command line argument.
 ---
 
 # DAY-6-WORK
