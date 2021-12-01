@@ -36,3 +36,15 @@
 ## **assignment of day-6**
 - Two integer value send by parent and child receive it and do addition operation and return send the result to parent through pipe.
 ---
+
+# DAY-7-WORK
+
+## **thread**
+- create the greet file
+
+## **assignment-7-day**
+- create two thread hello and bye
+## **learning**
+- what is thread
+- context switching
+- how to create multi thread
