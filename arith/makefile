@@ -1,18 +1,21 @@
 
 
+cc=gcc 
+
+
 all:output
 
 output:main.o add.o sub.o
-	gcc -o output main.o add.o sub.o
+	$(cc) -o output main.o add.o sub.o
 
 main.o:main.c
-	gcc -c -o main.o main.c
+	$(cc) -c -o main.o main.c
 
 add.o:add.c
-	gcc -c -o add.o add.c
+	$(cc) -c -o add.o add.c
 
 sub.o:sub.c
-	gcc -c -o sub.o sub.c
+	$(cc) -c -o sub.o sub.c
 
 clean:
 	rm -rf *.o output

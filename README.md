@@ -48,3 +48,23 @@
 - what is thread
 - context switching
 - how to create multi thread
+---
+# DAY-8-WORK
+
+- Thread
+- Resource
+- Racecondition
+
+## **valgrind**
+- detect the memory leakage
+## **exec**
+- old program is overwritten with new program
+## **stack frame**
+- About stack frame and stack pointer
+## **assignment-8-day**
+- create the own shell and   make fork < parent receive the input from user and transmit to child through pipe and in child EXEC will take place.
+---
+# DAY-9-WORK
+- mutual exclusion
+- race condition
+---
