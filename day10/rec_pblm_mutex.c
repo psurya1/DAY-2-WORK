@@ -4,12 +4,20 @@
 int count = 10;
 pthread_mutex_t mutexcount;
 pthread_mutexattr_t mutexattrcount;
+
+void square()
+{   
+    pthread_mutex_lock(&mutexcount);
+    count=count*count;
+    pthread_mutex_unlock(&mutexcount);
+}
 void *inc_thread(void *arg)
 {
     while (1)
     {   
         pthread_mutex_lock(&mutexcount);
         count++;
+        square();
         printf("INC_COUNT :%d\n", count);
         pthread_mutex_unlock(&mutexcount);
     }
