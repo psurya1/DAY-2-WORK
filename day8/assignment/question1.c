@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-/* what ever command given in DSEDSHELL it will loaded in child address space 
+/* what ever command(/bin/) given in DSEDSHELL it will loaded in child address space 
    through exec */
 int main(int argc,char const *argv[])
 {   
