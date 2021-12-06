@@ -22,15 +22,15 @@ int main(int argc,char const *argv[])
     if(0==id)
     {   
         unsigned char path[5]="/bin/";  
-        read(fd[0],&buff2,20);
+        read(fd[0],&buff2,20);    // child is receiving command
     //  printf("%s",buff2);
         printf("CHILD\n");
-        execl(path,buff2,NULL);
+        execl(path,buff2,NULL);   // child is loaded with new program through exec
     
     }
     else
     {
-        printf("PARENT\n");
+        printf("PARENT\n");        // parent is passing command through pipe
         
         write(fd[1],&buff1,20);
     }
