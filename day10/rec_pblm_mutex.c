@@ -45,5 +45,6 @@ int main(int argc, char const *argv[])
     pthread_join(incID,NULL);
     pthread_join(decID,NULL);
     pthread_mutex_destroy(&mutexcount);
+    pthread_mutexattr_destroy(&mutexattrcount);
     return 0;
 }
