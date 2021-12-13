@@ -1,33 +1,34 @@
 #include<stdio.h>
 #include<pthread.h>
+#include<unistd.h>
 
 pthread_barrier_t b1;
 
 void *temp_thread(void *arg)
 {
     printf("TEMP STARTS INIT\n");
-  //  sleep(2);
+  //sleep(2);
     pthread_barrier_wait(&b1);
     printf("TEMP COMPLETED\n");
 }
 void *ethernet_thread(void *arg)
 {
     printf("ETHERNET STARTS INIT\n");
-   // sleep(3);
+  //sleep(3);
     pthread_barrier_wait(&b1);
     printf("ETHERNET COMPLETED\n");
 }
 void *i2c_thread(void *arg)
 {
     printf("I2C STARTS INIT\n");
-  //  sleep(1);
+  //sleep(1);
     pthread_barrier_wait(&b1);
     printf("I2C COMPLETED\n");
 }
 void *uart_thread(void *arg)
 {
     printf("UART STARTS INIT\n");
-   // sleep(3);
+  //sleep(3);
     pthread_barrier_wait(&b1);
     printf("UART COMPLETED\n");
 }
