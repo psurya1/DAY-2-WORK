@@ -70,18 +70,18 @@
 ---
 # DAY-10-WORK
 ## **mutual exclusion**
-1.mutex
-1.semaphores
+1. mutex
+1. semaphores
 ## **mutex**
-1.futex mutex  --use when there is single lock in a function
-1.recursive mutex --use when there is multi lock in a function
-1.error chech mutex  --suppose we are using multi locks in a function it will throw error
-1.adaptive mutex  --used in multi process system
+1. futex mutex  --use when there is single lock in a function
+1. recursive mutex --use when there is multi lock in a function
+1. error chech mutex  --suppose we are using multi locks in a function it will throw error
+1. adaptive mutex  --used in multi process system
 ## **semaphores**
-1.binary
+1. binary
  -signaling
  -mutex exclusion
-2.counting
+2. counting
 ---
 # DAY-11-WORK
 - counting semaphores used in resource management
@@ -93,8 +93,8 @@
 ## **memory management**
 - Logical address vs physical address
 - Techinque to avoid fragmentation
-  1.compaction
-  1.paging
+  1. compaction
+  1. paging
 - TLB
 - virtual memory
 - demand paging 
