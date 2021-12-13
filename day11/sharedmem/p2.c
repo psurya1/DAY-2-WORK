@@ -7,7 +7,6 @@
 #include <semaphore.h>
 
 int *count;
-int num;
 sem_t s2;
 
 
@@ -26,5 +25,6 @@ int main(int argc,char const *srgv[])
         sem_post(&s2);
     }
     sem_destroy(&s2);
+    shmd=shm_unlink("/cdac");
     return 0;
 }

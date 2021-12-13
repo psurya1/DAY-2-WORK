@@ -10,7 +10,6 @@ int *count;
 int num;
 sem_t s1;
 
-
 int main(int argc,char const *srgv[])
 { 
 
@@ -27,5 +26,6 @@ int main(int argc,char const *srgv[])
         sem_post(&s1);
     }
     sem_destroy(&s1);
+    shmd=shm_unlink("/cdac");
     return 0;
 }
