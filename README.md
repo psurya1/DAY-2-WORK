@@ -79,8 +79,8 @@
 1. adaptive mutex  --used in multi process system
 ## **semaphores**
 1. binary
- -signaling
- -mutex exclusion
+ - signaling
+ - mutex exclusion
 2. counting
 ---
 # DAY-11-WORK
